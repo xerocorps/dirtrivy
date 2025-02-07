@@ -1,7 +1,5 @@
 # Directory Traversal Scanner 🔍
 
-[English](README_EN.md) | [中文](README.md)
-
 ## 📖 Description
 
 Directory Traversal Scanner is a high-performance security tool designed to detect and verify path traversal vulnerabilities in web applications. Leveraging asynchronous concurrent scanning and intelligent WAF bypass techniques, it helps security researchers quickly identify potential security risks.
@@ -39,10 +37,10 @@ Directory Traversal Scanner is a high-performance security tool designed to dete
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/directory-traversal-scanner.git
+git clone https://github.com/xerocorps/dirtrivy.git
 
 # Navigate to project directory
-cd directory-traversal-scanner
+cd dirtrivy
 
 # Install dependencies
 pip install -r requirements.txt
@@ -52,13 +50,13 @@ pip install -r requirements.txt
 
 ```bash
 # Scan a single URL
-python scanner.py -u "http://example.com/page.php?file=test.txt"
+python3 dirtrivy.py -u "http://example.com/page.php?file=test.txt"
 
 # Scan multiple URLs with WAF bypass enabled
-python scanner.py -u "http://example1.com" "http://example2.com" --waf
+python3 dirtrivy.py -u "http://example1.com" "http://example2.com" --waf
 
 # Custom concurrency and timeout
-python scanner.py -u "http://example.com" -c 200 -t 10
+python3 dirtrivy.py -u "http://example.com" -c 200 -t 10
 ```
 
 ## 📋 Command Line Arguments
